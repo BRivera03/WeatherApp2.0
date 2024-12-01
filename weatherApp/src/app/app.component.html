@@ -7,7 +7,7 @@
 </head>
 <body>
   <div style="text-align:center">
-    <h1>Weather App</h1>
+    <h1>Nimbus</h1>
   
     <div>
       <input type="text" [(ngModel)]="city" placeholder="Enter city" />
@@ -15,7 +15,7 @@
     </div>
   
     <div *ngIf="weatherData">
-      <h2>Weather in {{ weatherData.location.name }}, {{ weatherData.location.country }}</h2>
+      <h2>{{ weatherData.location.name }}, {{ weatherData.location.country }}</h2>
       <div>
         <img [src]="weatherData.current.condition.icon" alt="weather icon" />
         <p><strong>Condition:</strong> {{ weatherData.current.condition.text }}</p>
