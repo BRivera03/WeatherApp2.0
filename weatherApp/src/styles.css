@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+  
+/* CSS HEX */
+/* CSS HEX */
+--saffron: #e8c547ff;
+--jet: #30323dff;
+--davys-gray: #4d5061ff;
+--glaucous: #5c80bcff;
+--platinum: #e6e8e6ff;
+--timberwolf: #ced0ceff;
+
+
+/* CSS HSL */
+--saffron: hsla(47, 78%, 59%, 1);
+--jet: hsla(231, 12%, 21%, 1);
+--davys-gray: hsla(231, 11%, 34%, 1);
+--glaucous: hsla(218, 42%, 55%, 1);
+--platinum: hsla(120, 4%, 91%, 1);
+--timberwolf: hsla(120, 2%, 81%, 1);
+    }
+
+    html * {
+        /* font-size: 20px; */
+        background-color: var(--jet);
+    }
+
+/* Title */
+.webTitle{
+    padding: 50px;
+}
+
+/* searchDiv */
+#searchDiv{
+    text-align: center;
+}
+
+/*Search*/
+
+#search{
+    padding: 20px;
+    padding-right: 500px;
+    font-size: 30px;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: 400;
+    color: var(--platinum);
+}
+
+/* #searchButton{
+    /* padding: 35px;
+    width: 125px;
+    background-color: var(--platinum);
+    color: var(--glaucous);
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+} */
+
+/*Overall Results*/
+#results{
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Temperature Display */
+#temp{
+    padding: 35px;
+    font-size: 5em;
+    color: var(--saffron);
+}
+
+#icon{
+    width:1em;
+}
+
+/* error div */
+#errorDiv{
+    text-align: center;
+}
