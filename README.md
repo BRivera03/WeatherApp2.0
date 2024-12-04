@@ -1,5 +1,4 @@
-
-Angular/JS Weather App
+<h1>Angular/JS Weather App</h1>
 This README file works as a documentation/dev process for creating the weather angular app
 My goal is to create a web weather app, to show a different variety of information about the weather at the user’s selected locations. I will use a weather API and fetch all the data.
 
@@ -8,8 +7,13 @@ Used Angular api calls to create the HTTP getting the information I need for the
 API - I used https://www.weatherapi.com/ as my API. 
 The documentation for the api is  here https://www.weatherapi.com/docs/
 
-Dev Process:
-**weather.service
+
+<br>
+<br>
+
+
+<h1>Dev Process:</h1>
+<h2>weather.service</h2>
 **Create an angular app using ng new weatherApp –no-standalone to avoid changes to app.module.ts in new angular version 17
 
 Import HTTP module to app.module.ts to handle http requests
@@ -35,10 +39,11 @@ Stream of Data: An Observable represents a stream of values that can be emitted 
 Observer Pattern: Observables follow the observer pattern, where an Observable (the producer) emits values, and an Observer (the consumer) subscribes to receive those values
 https://v17.angular.io/guide/observables-in-angular
 
+<br>
+<br>
 
 
-
-**App.Component.ts
+<h2>App.Component.ts</h2> 
 Created variables:
 city which is a string
 weatherData which can be any, or in this case is JSON 
@@ -51,13 +56,10 @@ The subscribe works to handle async data and wait for data to be available from 
 To handle the response:
 next: (data) This function is called if the weather data is successfully retrieved (data). Inside, it updates the weatherData property with the received data and clears any existing error message.
 error: (err) This function is called if an error occurs during data retrieval (err). Inside, it sets the error property to an error message and clears any previously received weather data.
+<br>
+<br>
 
-
-
-
-
-
-HTML 
+<h2>HTML</h2> 
 Key Process & Functionality: 
 The user enters a city name in the input field.
 The ngModel binds the entered value to the city property in your component.
@@ -69,14 +71,11 @@ When the "Get Weather" button is blurred, a function getWeather() is called in y
 If the weather data is successfully retrieved, the weatherData property is populated, causing the first <div> with *ngIf="weatherData" to be displayed, showing the weather information.
 
 If there's an error fetching the weather data, the error property is populated, causing the second <div> with *ngIf="error" to be displayed, showing the error message.
-
-
-
-
-CSS
+<br>
+<br>
+<h2>CSS</h2>
 Vanilla css was used even though bootstrap was installed and set up. 
-
-
+<br>
 Keep in mind that app might not work if checking in the future since its a free trial and api key might change after it ends. To solve this create a new account and modify the code with the updated key and it should work.
 
 
