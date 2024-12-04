@@ -31,6 +31,11 @@
     padding: 50px;
 }
 
+/*Logo*/
+#logoImg{
+    width: 200px;
+}
+
 /* searchDiv */
 #searchDiv{
     text-align: center;
@@ -39,13 +44,15 @@
 /*Search*/
 
 #search{
+    padding-top: 2%;
     padding: 20px;
     padding-right: 500px;
     font-size: 30px;
     border-radius: 10px;
     border-style: none;
     font-weight: 400;
-    color: var(--platinum);
+    background-color: var(--timberwolf);
+    color: var(--jet);
 }
 
 /* #searchButton{
@@ -63,6 +70,8 @@
 #results{
     text-align: center;
     font-size: 25px;
+    color: var(--platinum);
+    padding-top: 10px;
 }
 
 /* Temperature Display */
